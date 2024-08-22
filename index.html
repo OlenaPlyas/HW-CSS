@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Card Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            text-align: center;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+        }
+        .card:nth-child(1) {
+            border:3px solid #FF6347; 
+        }
+
+        .card:nth-child(2) {
+            border: 3px solid #4682B4; 
+        }
+
+        .card:nth-child(3) {
+            border: 3px solid #32CD32; 
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 16px;
+        }
+        .card h3 {
+            margin: 16px 0 8px;
+            font-size: 16px;
+        }
+ .card p {
+            color: #666;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Card Image">
+            <h3>Hello</h3>
+            <p>Give me a snack.</p>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/1629781/pexels-photo-1629781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card Image">
+            <h3>Cool dog</h3>
+            <p>Cool dogs wearing glasses.</p>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/485294/pexels-photo-485294.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Card Image">
+            <h3>Bath time</h3>
+            <p>Bath time.</p>
+        </div>
+    </div>
+</body>
+</html>
